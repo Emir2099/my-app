@@ -17,7 +17,7 @@ export default function Scene() {
       <directionalLight position={[-5, -5, 5]} intensity={4} />
       <Suspense fallback={<Loader />}>
         <ScrollControls damping={0.5} pages={3}>
-          <Model />
+          <Model checkpointIndex={2} />
         </ScrollControls>
       </Suspense>
     </Canvas>
